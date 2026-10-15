@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/bits-technology/main/json-schema/bits-technology-get-oauth2-userinfo-response-schema.json",
+  "title": "GetOauth2UserinfoResponse",
+  "x-generated": "2026-10-15",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/bits-technology-openapi-generated.yml#/components/schemas/GetOauth2UserinfoResponse",
+  "type": "object",
+  "properties": {
+    "customerId": {
+      "type": "string",
+      "description": "Specifies which the identity of the customer."
+    }
+  }
+}

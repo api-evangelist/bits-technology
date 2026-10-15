@@ -1,0 +1,142 @@
+openapi: 3.1.0
+info:
+  title: Bits Technology API
+  version: '2026-10-15'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-15: 4 operation(s) read from 4 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Bits Technology has published no machine-readable contract that
+    the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 4
+    pages-with-code: 0
+    pages-read: 4
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-15'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.bits.bi/api-reference
+  - https://docs.bits.bi/api-reference/versioning
+  - https://docs.bits.bi/api-reference/starting-the-no-code
+  - https://docs.bits.bi/api-reference/authentication-and-authorization
+servers:
+- url: https://api.bits.bi
+paths:
+  /applications.bankAccounts.list:
+    post:
+      operationId: post_applications_bankAccounts_list
+      tags:
+      - Applications
+      summary: Request without Accept header (defaults to v1.0)
+      description: Creates a request to list bank accounts for the specified application. If no Accept header is provided, version 1.0 is used
+        by default.
+      x-source: https://docs.bits.bi/api-reference/versioning
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApplicationsBankaccountsListRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /applications.create:
+    post:
+      operationId: post_applications_create
+      tags:
+      - Applications
+      summary: Start an application by posting to the /applications.create endpoint.
+      x-source: https://docs.bits.bi/api-reference
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApplicationsCreateRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApplicationsCreateResponse'
+      x-evidence:
+        kind: documentation
+  /oauth2/userinfo:
+    get:
+      operationId: get_oauth2_userinfo
+      tags:
+      - Oauth2
+      summary: Retrieve token owner information
+      x-source: https://docs.bits.bi/api-reference/authentication-and-authorization
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetOauth2UserinfoResponse'
+      x-evidence:
+        kind: documentation
+  /v1/oauth2/token:
+    post:
+      operationId: post_v1_oauth2_token
+      tags:
+      - Oauth2
+      summary: The Oauth token is generated from POST /v1/oauth2/token using the API credentials created in the Bits Technology Dashboard.
+      x-source: https://docs.bits.bi/api-reference
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostApplicationsBankaccountsListRequest:
+      type: object
+      properties:
+        applicationId:
+          type: string
+          description: Identifier of the application
+      required:
+      - applicationId
+    PostApplicationsCreateRequest:
+      type: object
+      properties:
+        workflowId:
+          type: string
+        countryCode:
+          type: string
+        redirectUrl:
+          type: string
+      required:
+      - workflowId
+      - countryCode
+      - redirectUrl
+    PostApplicationsCreateResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        sessionToken:
+          type: string
+    GetOauth2UserinfoResponse:
+      type: object
+      properties:
+        customerId:
+          type: string
+          description: Specifies which the identity of the customer.
+  securitySchemes:
+    Bearer_token:
+      type: http
+      scheme: bearer
+      x-source: https://docs.bits.bi/api-reference/authentication-and-authorization
+tags:
+- name: Applications
+- name: Oauth2
+security:
+- Bearer_token: []

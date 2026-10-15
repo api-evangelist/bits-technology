@@ -1,0 +1,17 @@
+generated: '2026-10-15'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.bits.bi/sandbox
+sources:
+- https://docs.bits.bi/sandbox
+- https://docs.bits.bi/sandbox/test-data
+description: Bits Technology sandbox information
+modes:
+- name: sandbox
+  base_url: https://dashboard.bits.builders
+  portal: https://demo.bits.builders
+  how_to_get_access: Contact Bits Technology to get access.
+note: No key prefixes/formats, published test values, time‑simulation features, or fixture/trigger tooling are documented on the provided pages.
+docs:
+- https://docs.bits.bi/sandbox
+- https://docs.bits.bi/sandbox/test-data

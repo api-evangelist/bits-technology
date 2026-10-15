@@ -1,0 +1,98 @@
+generated: '2026-10-15'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 6
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - docs
+  - other
+  - portal
+  - website
+hosts:
+- host: api.bits.bi
+  found_by:
+  - apis[]
+  - contract-discovery
+  types: []
+  serves:
+  - api
+  registrable_domain: bits.bi
+  role: api
+  relation: own
+- host: bits.bi
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: bits.bi
+  role: website
+  relation: own
+- host: careers.bits.bi
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bits.bi
+  role: other
+  relation: own
+- host: dashboard.bits.bi
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bits.bi
+  role: other
+  relation: own
+- host: docs.bits.bi
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - namespace-probe
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Deprecation
+  - APIReference
+  serves:
+  - docs
+  title: Home – Bits Technology API Docs
+  status: 200
+  registrable_domain: bits.bi
+  role: docs
+  relation: own
+- host: www.bits.bi
+  found_by:
+  - pointer
+  - docs-index
+  types:
+  - Newsroom
+  - ChangeLog
+  - GettingStarted
+  - DeveloperPortal
+  - Documentation
+  - Blog
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - docs
+  registrable_domain: bits.bi
+  role: portal
+  relation: own

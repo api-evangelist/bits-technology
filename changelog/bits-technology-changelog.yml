@@ -1,0 +1,27 @@
+generated: '2026-10-15'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.bits.bi/changelog
+sources:
+- https://www.bits.bi/changelog
+- https://docs.bits.bi/api-reference/versioning
+entries:
+- breaking: false
+  highlights:
+  - Malta is now supported – Search for Maltese companies and retrieve their organization information directly in the onboarding flow.
+  - Procedures can now wait for an outcome and resume automatically, for example while a provider check completes.
+  date: '2026-10-15'
+- breaking: false
+  highlights:
+  - Transaction Monitoring is now part of Bits – see every transaction in one place, define what "suspicious" means for your business, and get
+    a case with all the context the moment something needs a closer look.
+  - A dedicated transactions view with search, filters and sortable columns helps analysts find what they need in seconds.
+  date: '2026-10-06'
+- breaking: false
+  highlights:
+  - 'Product launch: Procedures – Meet Procedures, the new way to turn your compliance policies into living, automated workflows.'
+  - Design them on a visual canvas, publish with a click, and see exactly what happened on every run.
+  date: '2026-10-01'
+current_version: '1.0'
+note: 'Versioning scheme: media type versioning using semantic versioning (major.minor) as described in the API versioning documentation.'
+docs: https://www.bits.bi/changelog

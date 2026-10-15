@@ -1,23 +1,139 @@
 aid: bits-technology
+
 name: Bits Technology
-description: 'Bits Technology is a company surfaced via the API Evangelist harvest backlog (source: stockholm-trip)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/images/NpU8G6c75uZqE07Xv48CXn7fuQ.jpg
+
+description: Bits Technology provides a compliance platform for the AMLR era, helping regulated financial companies streamline onboarding, transaction
+  monitoring, AML risk scoring, and ongoing due diligence. Based in Europe, Bits unifies anti‑money‑laundering processes for fintechs, offering
+  automated compliance operations, case management, and measurable growth. The platform supports integrations, APIs, and a developer portal for
+  building compliant financial services.
+
 url: https://raw.githubusercontent.com/api-evangelist/bits-technology/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:stockholm-trip
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-15 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-15'
+
 modified: '2026-10-15'
+
 tags:
 - Company
-apis: []
+- AML
+- Compliance
+- Fintech
+- Europe
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/bits-technology-vendors.yml
+- type: Spectral
+  url: rules/bits-technology-rules.yml
+- type: JSONLD
+  url: json-ld/bits-technology-context.jsonld
+- type: Vocabulary
+  url: vocabulary/bits-technology-vocabulary.yml
+- type: DataModel
+  url: data-model/bits-technology-data-model.yml
+- type: ChangeLog
+  url: changelog/bits-technology-changelog.yml
+- type: Sandbox
+  url: sandbox/bits-technology-sandbox.yml
+- type: Security
+  url: security/bits-technology-vulnerability-disclosure.yml
+- type: Authentication
+  url: authentication/bits-technology-authentication.yml
+- type: Deprecation
+  url: https://docs.bits.bi/api-reference/versioning
+- type: Lifecycle
+  url: lifecycle/bits-technology-lifecycle.yml
+- type: Conformance
+  url: conformance/bits-technology-conformance.yml
+- type: LLMsTxt
+  url: llms/bits-technology-llms.txt
+- type: SecurityTxt
+  url: well-known/bits-technology-security.txt
+- type: SecurityTxt
+  url: well-known/bits-technology-bits-security.txt
+- type: WellKnown
+  url: well-known/bits-technology-well-known.yml
+- type: Hosts
+  url: hosts/bits-technology-hosts.yml
+- type: Newsroom
+  url: https://www.bits.bi/press
+- type: ChangeLog
+  url: https://www.bits.bi/changelog
+- type: APIReference
+  url: https://docs.bits.bi/api-reference
+- type: GettingStarted
+  url: https://www.bits.bi/use-cases/onboarding
+- type: VulnerabilityDisclosure
+  url: security/bits-technology-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/bits-technology-domain-security.yml
 - type: Website
   url: https://bits.bi/
+- type: DeveloperPortal
+  url: https://www.bits.bi/developers
+- type: Documentation
+  url: https://www.bits.bi/developers
+- type: Blog
+  url: https://www.bits.bi/resources/blog
+- type: TermsOfService
+  url: https://www.bits.bi/resources/legal
+- type: PrivacyPolicy
+  url: https://www.bits.bi/resources/legal
+
+apis:
+- name: Bits Technology API
+  description: API for Bits Technology compliance platform, documented at https://docs.bits.bi/api-reference
+  humanURL: https://docs.bits.bi/api-reference
+  baseURL: null
+  aid: bits-technology:bits-technology-api-2
+- aid: bits-technology:bits-technology-api
+  name: Bits Technology API
+  description: 'Bits Technology API as documented publicly: 4 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
+
+    not the provider''s own document.'
+  humanURL: https://docs.bits.bi/api-reference
+  baseURL: https://api.bits.bi
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/bits-technology-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/bits-technology-post-applications-create-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bits-technology-post-applications-bankaccounts-list-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bits-technology-get-oauth2-userinfo-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bits-technology-post-applications-create-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: API reference page is a JavaScript‑rendered Next.js site with no static OpenAPI spec
+  evidence:
+  - url: https://docs.bits.bi/api-reference
+    status: 200
+  checked: '2026-10-15'
+x-enrichment:
+  date: '2026-10-15'
+  status: enriched
+  artifacts_added: 26
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

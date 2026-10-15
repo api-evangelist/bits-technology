@@ -1,0 +1,4 @@
+Contact: mailto:security@bits.bi
+Expires: 2028-08-31T23:59:59.000Z
+Preferred-Languages: en, sv
+Canonical: https://www.bits.bi/.well-known/security.txt

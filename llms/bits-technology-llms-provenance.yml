@@ -1,0 +1,6 @@
+generated: '2026-10-15'
+method: probed
+generator: harvest-llms.py
+source: https://gist.githubusercontent.com/pauliinaperkio-bits/7e22c24a5ddb1819f63ef94824a78831/raw/llms.txt
+bytes: 4115
+note: saved verbatim; the provider's own document

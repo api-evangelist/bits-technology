@@ -1,0 +1,22 @@
+generated: '2026-10-15'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.bits.bi/changelog
+sources:
+- https://www.bits.bi/changelog
+- https://docs.bits.bi/api-reference/versioning
+- https://www.bits.bi/use-cases/onboarding
+- https://docs.bits.bi/getting-started
+versioning:
+  how_selected: header
+  docs: https://docs.bits.bi/api-reference/versioning
+deprecation:
+  policy: When a new version of the API is released, the previous version will be supported for a minimum of 3 months. After this period, the
+    previous version will be deprecated and eventually sunset.
+  notice_period: minimum of 3 months
+  headers:
+  - Deprecation
+  - Sunset
+  docs: https://docs.bits.bi/api-reference/versioning
+status_page: null
+docs: https://www.bits.bi/changelog

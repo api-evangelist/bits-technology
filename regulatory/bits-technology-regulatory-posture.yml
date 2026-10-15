@@ -1,0 +1,21 @@
+generated: '2026-10-15'
+method: probed
+source:
+  - https://www.bits.bi/resources/legal/privacy-policy
+signals:
+  data_subject_request:
+    url: https://www.bits.bi/resources/legal/privacy-policy
+    section: "Your Rights"
+    evidence:
+      - source: "Privacy Policy | Bits Technology"
+        http_status: 200
+        fetched: "true"
+        quote: "You have the following rights under the GDPR: Access : to know what data we hold about you Rectification : to correct inaccurate or incomplete data Erasure (\"right to be forgotten\") : to request deletion where processing is no longer necessary Restriction : to limit processing in certain circumstances Objection : to processing based on legitimate interests or for direct marketing Data portability : to receive your data in a machine‑readable format Withdraw consent : at any time, for future processing"
+  data_retention:
+    url: https://www.bits.bi/resources/legal/privacy-policy
+    section: "Data Retention"
+    evidence:
+      - source: "Privacy Policy | Bits Technology"
+        http_status: 200
+        fetched: "true"
+        quote: "We keep personal data only as long as necessary for the purposes described above or as required by law, for example under accounting regulations. After that, data are securely deleted or anonymised."

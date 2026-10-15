@@ -1,0 +1,20 @@
+generated: '2026-10-15'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.bits.bi/api-reference/authentication-and-authorization
+sources:
+- https://docs.bits.bi/api-reference/authentication-and-authorization
+- https://www.bits.bi/use-cases/onboarding
+- https://docs.bits.bi/getting-started
+- https://docs.bits.bi/sandbox
+description: Authentication schemes as published on Bits Technology documentation
+schemes:
+- type: http-bearer
+  name: Bearer token
+  evidence: The access token is a bearer token and the holder of the token is authorized to create applications and read application data.
+  location: header
+  header: Authorization
+  how_to_obtain: Obtain the token via the OAuth client_credentials flow described above and include it in the Authorization header as "Bearer
+    <accessToken>".
+docs: https://docs.bits.bi/api-reference/authentication-and-authorization
+note: 1 extracted row(s) were dropped because their quote was not on the page.

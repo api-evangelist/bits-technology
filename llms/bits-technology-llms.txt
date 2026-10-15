@@ -1,0 +1,30 @@
+# Bits
+> Bits is a compliance infrastructure platform for regulated financial companies in Europe — covering KYC/KYB onboarding, AML, transaction monitoring, risk assessment, ongoing due diligence, and unified case management, with European data coverage. Available as a full stack or as a modular layer above existing providers.
+Bits is headquartered in Stockholm, Sweden. Customers are primarily payment institutions, neobanks, crypto/VASPs, and spend management companies across the Nordics, with expansion into DACH, UK and Benelux. Founded 2022 by alumni from Klarna, AWS, and Tink. Series A €12M (February 2026).
+Two deployment models: full-stack for mid-market fintechs, and a modular orchestration layer (BYOV — Bring Your Own Vendors) for enterprises that want to keep existing data providers and add Bits as the workflow and intelligence layer above them.
+## Platform
+- [Homepage](https://www.bits.bi/): Overview of Bits — compliance infrastructure for regulated financial companies covering the full lifecycle from onboarding to ongoing monitoring.
+- [KYC/KYB onboarding](https://www.bits.bi/use-cases/onboarding): Business and individual onboarding with European registry coverage, UBO discovery, document verification, and eID.
+- [AML case management](https://www.bits.bi/use-cases/aml-case-management): AML screening, PEP/sanctions, adverse media, and unified case management with full audit trail.
+- [Transaction Monitoring](https://www.bits.bi/use-cases/transaction-monitoring): Real-time transaction monitoring for financial crime detection — fewer false positives, faster case handling.
+- [Ongoing Due Diligence](https://www.bits.bi/use-cases/ongoing-due-diligence): Automated daily monitoring across 1,300+ lists with configurable rules and event-driven review triggers.
+- [Risk score](https://www.bits.bi/use-cases/risk-score): Automated risk scoring and classification across customer relationships.
+- [Credit score](https://www.bits.bi/use-cases/credit-score): Business credit scoring via Bits and Coface — 0–10 risk score, 5-year history, probability of default.
+- [Bits AI](https://www.bits.bi/bits-ai): AI-powered compliance tools for automated decisions, investigations, and document analysis.
+- [Integrations & data coverage](https://www.bits.bi/integrations): European registry data, eID providers, PEP/sanctions lists, and third-party compliance tools available within the Bits platform — covering multiple European markets.
+- [Developers / API](https://www.bits.bi/developers): API documentation and integration reference for technical teams.
+## Customers
+- [Customer stories](https://www.bits.bi/customers): Case studies from 30+ regulated financial companies including Qliro, Walley, Brite, Alisa Bank, Coinmotion, CleverCards, and Cardlay.
+- [Qliro](https://www.bits.bi/customers/how-qliro-turned-compliance-into-a-competitive-advantage-with-bits): How Qliro doubled merchant onboarding volume, cut SME onboarding time by 50%, and achieved 4x faster approvals — no added headcount.
+## Company
+- [About](https://www.bits.bi/resources/about): Founders (Jonatan Klintberg CEO, Robin Lantz CPO, Fredrik Eriksson CRO), mission, and company background.
+- [Press](https://www.bits.bi/press): Media coverage and press releases.
+- [Series A announcement](https://www.bits.bi/resources/blog/bits-raises-%E2%82%AC12m-series-a-to-unify-aml-for-european-fintechs): €12M Series A raised February 2026.
+## Get started
+- [Start a free trial](https://www.bits.bi/resources/start-a-free-trial): Begin a trial of the Bits platform.
+- [Contact](https://www.bits.bi/resources/contact): Sales inquiries and partnership conversations.
+## Optional
+- [Learning Hub](https://www.bits.bi/learning-hub): Regulatory explainers and compliance guides for regulated financial companies in Europe.
+- [Blog](https://www.bits.bi/resources/blog): Product updates, customer announcements, and thought leadership.
+- [Changelog](https://www.bits.bi/changelog): Product release notes.
+- [Newsletter](https://www.bits.bi/resources/newsletter): The Brief by Bits — compliance news and product updates.
