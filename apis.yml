@@ -99,21 +99,21 @@ common:
 
 apis:
 - name: Bits Technology API
-  description: API for Bits Technology compliance platform, documented at https://docs.bits.bi/api-reference
+  description: >-
+    API for Bits Technology compliance platform, documented at https://docs.bits.bi/api-reference
   humanURL: https://docs.bits.bi/api-reference
   baseURL: null
   aid: bits-technology:bits-technology-api-2
-- aid: bits-technology:bits-technology-api
-  name: Bits Technology API
-  description: 'Bits Technology API as documented publicly: 4 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
-
-    not the provider''s own document.'
+- aid: bits-technology:bits-technology-applications-api
+  name: Bits Technology Applications API
+  description: The Applications API from Bits Technology — 2 operation(s) for applications.
   humanURL: https://docs.bits.bi/api-reference
   baseURL: https://api.bits.bi
+  tags:
+  - Applications
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/bits-technology-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/bits-technology-applications-api-openapi.yml
   - type: JSONSchema
     url: json-schema/bits-technology-post-applications-create-request-schema.json
   - type: JSONSchema
@@ -122,7 +122,24 @@ apis:
     url: json-schema/bits-technology-get-oauth2-userinfo-response-schema.json
   - type: JSONSchema
     url: json-schema/bits-technology-post-applications-create-response-schema.json
-
+- aid: bits-technology:bits-technology-oauth2-api
+  name: Bits Technology Oauth2 API
+  description: The Oauth2 API from Bits Technology — 2 operation(s) for oauth2.
+  humanURL: https://docs.bits.bi/api-reference
+  baseURL: https://api.bits.bi
+  tags:
+  - Oauth2
+  properties:
+  - type: OpenAPI
+    url: openapi/bits-technology-oauth2-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/bits-technology-post-applications-create-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bits-technology-post-applications-bankaccounts-list-request-schema.json
+  - type: JSONSchema
+    url: json-schema/bits-technology-get-oauth2-userinfo-response-schema.json
+  - type: JSONSchema
+    url: json-schema/bits-technology-post-applications-create-response-schema.json
 x-coverage:
   state: unreadable
   reason: js-rendered-docs

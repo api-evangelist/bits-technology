@@ -1,0 +1,104 @@
+openapi: 3.2.0
+info:
+  title: Bits Technology Applications API
+  version: '2026-10-15'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-15: 4 operation(s) read from 4 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Bits Technology has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 4
+    pages-with-code: 0
+    pages-read: 4
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-15'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.bits.bi/api-reference
+  - https://docs.bits.bi/api-reference/versioning
+  - https://docs.bits.bi/api-reference/starting-the-no-code
+  - https://docs.bits.bi/api-reference/authentication-and-authorization
+servers:
+- url: https://api.bits.bi
+security:
+- Bearer_token: []
+tags:
+- name: Applications
+paths:
+  /applications.bankAccounts.list:
+    post:
+      operationId: post_applications_bankAccounts_list
+      tags:
+      - Applications
+      summary: Request without Accept header (defaults to v1.0)
+      description: Creates a request to list bank accounts for the specified application. If no Accept header is provided, version 1.0 is used by default.
+      x-source: https://docs.bits.bi/api-reference/versioning
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApplicationsBankaccountsListRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /applications.create:
+    post:
+      operationId: post_applications_create
+      tags:
+      - Applications
+      summary: Start an application by posting to the /applications.create endpoint
+      x-source: https://docs.bits.bi/api-reference
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApplicationsCreateRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApplicationsCreateResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostApplicationsCreateRequest:
+      type: object
+      properties:
+        workflowId:
+          type: string
+        countryCode:
+          type: string
+        redirectUrl:
+          type: string
+      required:
+      - workflowId
+      - countryCode
+      - redirectUrl
+    PostApplicationsCreateResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        sessionToken:
+          type: string
+    PostApplicationsBankaccountsListRequest:
+      type: object
+      properties:
+        applicationId:
+          type: string
+          description: Identifier of the application
+      required:
+      - applicationId
+  securitySchemes:
+    Bearer_token:
+      type: http
+      scheme: bearer
+      x-source: https://docs.bits.bi/api-reference/authentication-and-authorization
