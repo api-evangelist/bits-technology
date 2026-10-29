@@ -64,5 +64,115 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bits Technology is a company surfaced via the API Evangelist harvest backlog (source: stockholm-trip) and added to the network as a stub for full-pipeline profiling.
-- https://bits.bi/
+Bits Technology provides a compliance platform for the AMLR era, helping regulated financial companies streamline onboarding, transaction monitoring, AML risk scoring, and ongoing due diligence. Based in Europe, Bits unifies anti‑money‑laundering processes for fintechs, offering automated compliance operations, case management, and measurable growth. The platform supports integrations, APIs, and a developer portal for building compliant financial services.
+
+**Areas:** Company · AML · Compliance · Fintech · Europe
+
+## Bits Technology on APIs.io
+
+Everything profiled for Bits Technology is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bits-technology/](https://apis.io/providers/bits-technology/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [Bits Technology API](https://apis.io/apis/bits-technology/bits-technology-api-2/) — API for Bits Technology compliance platform, documented at https://docs.bits.bi/api-reference
+- [Bits Technology Applications API](https://apis.io/apis/bits-technology/bits-technology-applications-api/) — The Applications API from Bits Technology — 2 operation(s) for applications.
+- [Bits Technology Oauth2 API](https://apis.io/apis/bits-technology/bits-technology-oauth2-api/) — The Oauth2 API from Bits Technology — 2 operation(s) for oauth2.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (4)
+
+The data models the API reads and writes.
+
+- [GetOauth2UserinfoResponse](https://apis.io/schemas/bits-technology/bits-technology-get-oauth2-userinfo-response/)
+- [PostApplicationsBankaccountsListRequest](https://apis.io/schemas/bits-technology/bits-technology-post-applications-bankaccounts-list-request/)
+- [PostApplicationsCreateRequest](https://apis.io/schemas/bits-technology/bits-technology-post-applications-create-request/)
+- [PostApplicationsCreateResponse](https://apis.io/schemas/bits-technology/bits-technology-post-applications-create-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Bits Technology Context](https://apis.io/jsonld/bits-technology/bits-technology-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Bits Technology API Rules](https://apis.io/rules/bits-technology/bits-technology-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bits Technology Authentication](https://apis.io/security/bits-technology/bits-technology-authentication/)
+- [Bits Technology Domain Security](https://apis.io/security/bits-technology/bits-technology-domain-security/)
+- [Bits Technology Vulnerability Disclosure](https://apis.io/security/bits-technology/bits-technology-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bits.bi/)
+- [Documentation](https://www.bits.bi/developers)
+- [Getting started](https://www.bits.bi/use-cases/onboarding)
+- [API reference](https://docs.bits.bi/api-reference)
+- [Changelog](https://www.bits.bi/changelog)
+- [Blog](https://www.bits.bi/resources/blog)
+- [Terms of service](https://www.bits.bi/resources/legal)
+- [Privacy policy](https://www.bits.bi/resources/legal)
+
+## API Evangelist rating
+
+**Kin Score 38.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 21.4 |
+| Contract governance | 35.6 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 59.5 |
+| Access clarity | 21.1 |
+
+**Agent readiness 18.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bits-technology/](https://apis.io/providers/bits-technology/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bits Technology: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bits-technology/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
